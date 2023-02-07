@@ -1,0 +1,274 @@
+|trca
+x[0] => FA:FA1.a
+x[1] => FA:FA2.a
+x[2] => FA:FA3.a
+x[3] => FA:FA4.a
+y[0] => FA:FA1.b
+y[1] => FA:FA2.b
+y[2] => FA:FA3.b
+y[3] => FA:FA4.b
+z[0] => FA:FA1.c0
+z[1] => FA:FA2.c0
+z[2] => FA:FA3.c0
+z[3] => FA:FA4.c0
+su[0] << RCA:RCA1.s[0]
+su[1] << RCA:RCA1.s[1]
+su[2] << RCA:RCA1.s[2]
+su[3] << RCA:RCA1.s[3]
+su[4] << RCA:RCA1.s[4]
+c << RCA:RCA1.c
+
+
+|trca|FA:FA1
+a => HA:HA1.a
+b => HA:HA1.b
+c0 => HA:HA2.b
+s <= HA:HA2.S
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|FA:FA1|HA:HA1
+a => S.IN0
+a => c.IN0
+b => S.IN1
+b => c.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|FA:FA1|HA:HA2
+a => S.IN0
+a => c.IN0
+b => S.IN1
+b => c.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|FA:FA2
+a => HA:HA1.a
+b => HA:HA1.b
+c0 => HA:HA2.b
+s <= HA:HA2.S
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|FA:FA2|HA:HA1
+a => S.IN0
+a => c.IN0
+b => S.IN1
+b => c.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|FA:FA2|HA:HA2
+a => S.IN0
+a => c.IN0
+b => S.IN1
+b => c.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|FA:FA3
+a => HA:HA1.a
+b => HA:HA1.b
+c0 => HA:HA2.b
+s <= HA:HA2.S
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|FA:FA3|HA:HA1
+a => S.IN0
+a => c.IN0
+b => S.IN1
+b => c.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|FA:FA3|HA:HA2
+a => S.IN0
+a => c.IN0
+b => S.IN1
+b => c.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|FA:FA4
+a => HA:HA1.a
+b => HA:HA1.b
+c0 => HA:HA2.b
+s <= HA:HA2.S
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|FA:FA4|HA:HA1
+a => S.IN0
+a => c.IN0
+b => S.IN1
+b => c.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|FA:FA4|HA:HA2
+a => S.IN0
+a => c.IN0
+b => S.IN1
+b => c.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|RCA:RCA1
+a[0] => FA:FA1.a
+a[1] => FA:FA2.a
+a[2] => FA:FA3.a
+a[3] => FA:FA4.a
+a[4] => FA:FA5.a
+b[0] => FA:FA1.b
+b[1] => FA:FA2.b
+b[2] => FA:FA3.b
+b[3] => FA:FA4.b
+b[4] => FA:FA5.b
+s[0] <= FA:FA1.s
+s[1] <= FA:FA2.s
+s[2] <= FA:FA3.s
+s[3] <= FA:FA4.s
+s[4] <= FA:FA5.s
+c <= FA:FA5.c
+
+
+|trca|RCA:RCA1|FA:FA1
+a => HA:HA1.a
+b => HA:HA1.b
+c0 => HA:HA2.b
+s <= HA:HA2.S
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|RCA:RCA1|FA:FA1|HA:HA1
+a => S.IN0
+a => c.IN0
+b => S.IN1
+b => c.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|RCA:RCA1|FA:FA1|HA:HA2
+a => S.IN0
+a => c.IN0
+b => S.IN1
+b => c.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|RCA:RCA1|FA:FA2
+a => HA:HA1.a
+b => HA:HA1.b
+c0 => HA:HA2.b
+s <= HA:HA2.S
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|RCA:RCA1|FA:FA2|HA:HA1
+a => S.IN0
+a => c.IN0
+b => S.IN1
+b => c.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|RCA:RCA1|FA:FA2|HA:HA2
+a => S.IN0
+a => c.IN0
+b => S.IN1
+b => c.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|RCA:RCA1|FA:FA3
+a => HA:HA1.a
+b => HA:HA1.b
+c0 => HA:HA2.b
+s <= HA:HA2.S
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|RCA:RCA1|FA:FA3|HA:HA1
+a => S.IN0
+a => c.IN0
+b => S.IN1
+b => c.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|RCA:RCA1|FA:FA3|HA:HA2
+a => S.IN0
+a => c.IN0
+b => S.IN1
+b => c.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|RCA:RCA1|FA:FA4
+a => HA:HA1.a
+b => HA:HA1.b
+c0 => HA:HA2.b
+s <= HA:HA2.S
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|RCA:RCA1|FA:FA4|HA:HA1
+a => S.IN0
+a => c.IN0
+b => S.IN1
+b => c.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|RCA:RCA1|FA:FA4|HA:HA2
+a => S.IN0
+a => c.IN0
+b => S.IN1
+b => c.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|RCA:RCA1|FA:FA5
+a => HA:HA1.a
+b => HA:HA1.b
+c0 => HA:HA2.b
+s <= HA:HA2.S
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|RCA:RCA1|FA:FA5|HA:HA1
+a => S.IN0
+a => c.IN0
+b => S.IN1
+b => c.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|trca|RCA:RCA1|FA:FA5|HA:HA2
+a => S.IN0
+a => c.IN0
+b => S.IN1
+b => c.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,3 @@
+file name code have all codes for component and test bench
+''''''''' sumpro the source code of project u can export and run it
+''''''''' vhd and vht have all vhd vht file 
